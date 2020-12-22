@@ -1,0 +1,115 @@
+/* body {
+    background-image: url(/images/logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 3% 96%;
+} */
+
+div#logo-chico {
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    /* z-index: 1; */
+    padding-left: 10px;
+}
+
+/* img.logo {
+    margin: -45px;
+} */
+
+#escudo {
+    position: absolute;
+    top: 0px; 
+    right: 0px;
+    padding-right: 10px;
+}
+
+
+
+#logo-grande {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#techs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 1 / 2 / 2 / 3; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 1 / 3 / 2 / 4; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+
+
+.imagen {
+    border-style: none !important;
+    border-radius: 10px !important;
+    margin: 20px 10px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.5) !important; */
+    filter: drop-shadow(0 0 5px #292929);
+}
+
+.gridReportes {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.gridReportes > .div1 { grid-area: 1 / 1 / 2 / 2; }
+.gridReportes > .div2 { grid-area: 1 / 2 / 2 / 3; }
+.gridReportes > .div3 { grid-area: 2 / 1 / 3 / 2; }
+.gridReportes > .div4 { grid-area: 2 / 2 / 3 / 3; }
+
+
+.gridFinal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.gridFinal > .div1 { grid-area: 1 / 1 / 2 / 2; }
+.gridFinal > .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+
+.imagenFinal {
+    border-style: none !important;
+    border-radius: 10px !important;
+    margin: 20px 10px;
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.contactDiv {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 10px;
+}
+
+div > #contacto {
+    margin: auto;
+    border-style: none;
+    box-shadow: none;
+    background: none;
+}

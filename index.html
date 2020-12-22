@@ -1,23 +1,360 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/beige.css" id="theme" />
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
+
+		<!-- Logo Template -->
+		<link rel="stylesheet" href="dist/custom/style.css" />
 	</head>
+
 	<body>
 		<div class="reveal">
+			<div id="logo-chico">
+				<img class="logo imagen" width="150" src="images/Enredarte.jpg" alt="Logo" />
+			</div>
+			<div id="escudo">
+				<img width="150" src="images/Escudo-25.png" alt="Logo" />
+			</div>
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section
+					id="Bienvenidos"
+					data-timing="180"
+					data-transition="fade-out"
+					data-background-size="50% 50%"
+				>
+					<h1>Bienvenidos</h1>
+					<aside class="notes">Marc Andreesen, creador de Mosaic,</aside>
+				</section>
+				<section
+					data-state="esconder-escudo"
+					data-transition="fade"
+					data-timing="100"
+					data-background-video="/videos/Enredarte.mp4"
+				>
+					<aside class="notes">Video</aside>
+				</section>
+				<section data-auto-animate data-transition="fade" id="Charla2" data-timing="60">
+					<img
+						id="logo-grande"
+						class="fragment"
+						data-transition="zoom"
+						data-transition-speed="slow"
+						src="images/logo-arriba2.svg"
+						height="300"
+					/>
+				</section>
+				<section data-auto-animate data-transition="fade-in convex-out" data-timing="50">
+					<img id="logo-grande" src="images/logo-arriba2.svg" height="251" />
+					<ol>
+						<ul class="fade-down">
+							Simple y reconocible
+						</ul>
+						<ul class="fragment fade-down">
+							Adaptable a la organización
+						</ul>
+						<ul class="fragment fade-down">
+							Fácil pronunciación
+						</ul>
+					</ol>
+					<aside class="notes"></aside>
+				</section>
+				<section
+					id="Características"
+					data-transition="fade-in fade-out"
+					data-transition-speed="slow"
+					data-timing="90"
+				>
+					<h3>Ventajas</h3>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Manual</th>
+								<th>
+									<b><i style="font-style: italic">Flexbox</i></b>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Organización de la Información</td>
+								<td class="fragment highlight-red">Costosa</td>
+								<td class="fragment highlight-green">Eficiente</td>
+							</tr>
+							<tr>
+								<td>Recordatorios</td>
+								<td class="fragment highlight-red">Herramientas de 3ros</td>
+								<td class="fragment highlight-green">Integrado al sistema</td>
+							</tr>
+							<tr>
+								<td>Análisis de Información</td>
+								<td class="fragment highlight-red">Dificíl o inexistente</td>
+								<td class="fragment highlight-green">Informes automatizados</td>
+							</tr>
+							<tr>
+								<td>Controles de acceso</td>
+								<td class="fragment highlight-red">Limitado</td>
+								<td class="fragment highlight-green">Permisos flexibles</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">Costosa -> Tiempo del Usuario</aside>
+				</section>
+				<section
+					id="Arquitectura"
+					data-transition="zoom-in fade-out"
+					data-timing="75"
+					data-background-image="images/FrontBack.png"
+					data-background-opacity="0.3"
+				>
+					<h2>Herramientas utilizadas</h2>
+					<div id="techs">
+						<div class="div1">
+							<img
+								class="fragment imagen stretch"
+								height="120"
+								src="images/html-5.svg"
+							/>
+							<img class="fragment imagen" height="120" src="images/css-3.svg" />
+						</div>
+						<div class="div2">
+							<img class="fragment imagen" height="100" src="images/bootstrap.svg" />
+							<img class="fragment imagen" height="100" src="images/javascript.svg" />
+						</div>
+						<div class="div3"></div>
+						<div class="div4"></div>
+						<div class="div5 fragment">
+							<img class="imagen" width="150" src="images/python.png" />
+							<img class="imagen" width="150" src="images/django-logo-positive.svg" />
+						</div>
+						<div class="div6">
+							<img class="fragment imagen" width="150" src="images/postgresql.png" />
+						</div>
+					</div>
+					<!-- <img class="imagen" width="600" height="400" src="images/ClientServer.jpg"> -->
+					<aside class="notes">
+						<h3>5 min</h3>
+					</aside>
+				</section>
+				<section
+					id="Arquitectura2"
+					data-transition="zoom-in fade-out"
+					data-background-image="images/FrontBack.png"
+					data-background-opacity="0.3"
+				>
+					<h2>Costo de Licenciamiento = $ 0</h2>
+				</section>
+				<section id="modulos" data-timing="40">
+					<h2>Módulos</h2>
+					<ul>
+						<div class="fragment fade-right">
+							<li>Insumos</li>
+							<li>Productos</li>
+						</div>
+						<div class="fragment fade-right">
+							<li>Clientes</li>
+							<li>Proveedores</li>
+						</div>
+						<li class="fragment fade-right">Pedidos</li>
+						<li class="fragment fade-right">Panel de Administración</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Interfaz del sistema</h2>
+					</section>
+					<section id="login">
+						<h3>Login</h3>
+						<img class="imagen" width="55%" src="images/screenshots/login.png" />
+					</section>
+					<section
+						id="home"
+						data-background-video="/videos/Home.m4v"
+						data-background-size="cover"
+					></section>
+				</section>
+				<section
+					id="validaciones"
+					data-background-video="/videos/Validaciones.m4v"
+					data-background-size="contain"
+				></section>
+				<section>
+					<section
+						id="alta"
+						data-background-video="/videos/Alta-Producto.m4v"
+						data-background-size="cover"
+					></section>
+					<section
+						id="modificacion"
+						data-background-video="/videos/Compra-Modificación.m4v"
+						data-background-size="cover"
+					></section>
+					<section
+						id="baja"
+						data-background-video="/videos/Compra-Baja.m4v"
+						data-background-size="cover"
+					></section>
+				</section>
+				<section>
+					<h2>Pedidos</h2>
+				</section>
+				<section>
+					<section
+						id="alta-pedido"
+						data-background-video="/videos/Pedido-Alta.m4v"
+						data-background-size="cover"
+					></section>
+					<section
+						id="pedido-detalle"
+						data-background-video="/videos/Pedido-Detalle.m4v"
+						data-background-size="cover"
+					></section>
+					<section
+						id="pedido-proceso"
+						data-background-video="/videos/Pedido-en_proceso.m4v"
+						data-background-size="cover"
+					></section>
+					<section
+						id="pedido-listo"
+						data-background-video="/videos/Pedido_listo.m4v"
+						data-background-size="cover"
+					></section>
+					<section
+						id="pedido-listado"
+						data-background-video="/videos/Listado-Pedidos-PDF.m4v"
+						data-background-size="cover"
+					></section>
+				</section>
+				<section
+					id="reportes"
+					data-background-video="/videos/Reportes Pedidos.m4v"
+					data-background-size="cover"
+				></section>
+				<section id="reportes2">
+					<section data-transition="concave">
+						<img class="imagen" src="/images/screenshots/productos-tiempo.png" />
+					</section>
+					<section data-transition="concave">
+						<img
+							width="600px"
+							class="imagen"
+							src="/images/screenshots/pedidos-por-cliente.png"
+						/>
+						<img
+							class="imagen fragment"
+							width="600px"
+							src="/images/screenshots/clientes-localidad.png"
+						/>
+					</section>
+					<section data-transition="concave">
+						<img
+							class="imagen"
+							src="/images/screenshots/pedidos-registrados-usuario.png"
+						/>
+					</section>
+				</section>
+				<section>
+					<h3>Permisos</h3>
+				</section>
+				<section
+					id="permisos"
+					data-background-video="/videos/Usuario-operario.m4v"
+					data-background-size="cover"
+				></section>
+				<section
+					id="admin"
+					data-background-video="/videos/Variables_Admin_Corto.m4v"
+					data-background-size="cover"
+				></section>
+				<section id="recap" data-auto-animate>
+					<h2>Resumen</h2>
+					<ul class="no-bullets">
+						<li class="fade-right fragment">Datos organizados</li>
+					</ul>
+				</section>
+				<section id="recap" data-auto-animate>
+					<h2>Resumen</h2>
+					<ul class="no-bullets">
+						<li class="fade-right centered">Seguridad</li>
+						<li
+							class="fade-right"
+							style="border: 1px solid #56585a; border-radius: 0.25rem; padding: 10px"
+						>
+							Datos organizados
+						</li>
+						<div class="fade-right fragment">
+							<span class="centered">+</span>
+							<li class="fade-right">Análisis eficiente</li>
+						</div>
+						<div class="fade-right fragment">
+							<span class="centered">&#61;</span>
+							<li class="fade-right">Información valiosa</li>
+						</div>
+						<div class="fade-right fragment">
+							<span class="centered">&darr;</span>
+							<h3 class="zoom">Buenas decisiones</h3>
+						</div>
+					</ul>
+				</section>
+
+				<section data-auto-animate data-transition="fade" id="final1" data-timing="60">
+					<img
+						id="logo-enredarte"
+						class="zoom imagenFinal"
+						data-transition="zoom"
+						data-transition-speed="slow"
+						src="images/Enredarte.jpg"
+						height="300"
+					/>
+				</section>
+				<section data-auto-animate data-transition="fade" id="final1" data-timing="60">
+					<div class="gridFinal">
+						<div class="div1">
+							<img
+								id="logo-enredarte"
+								class="zoom imagenFinal"
+								data-transition="zoom"
+								data-transition-speed="slow"
+								src="images/Enredarte.jpg"
+								height="300"
+							/>
+						</div>
+						<div class="div2">
+							<img
+								id="logo-grande"
+								class="zoom"
+								data-transition="zoom"
+								data-transition-speed="slow"
+								src="images/logo-arriba2.svg"
+								height="300"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section id="Contacto" data-transition="zoom">
+					<h2>¡Muchas gracias!</h2>
+					<div class="contactDiv">
+						Marco Richetta - Software Developer
+						<img id="contacto" src="images/icons/gmail.png" />
+						<span>marcorichetta@gmail.com</span>
+						<img id="contacto" src="images/icons/resume-website.png" />
+						<span>marcorichetta.now.sh</span>
+					</div>
+				</section>
 			</div>
 		</div>
 
@@ -25,16 +362,59 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				keyboard: {
+					// Pausar videos normales con barra espaciadora
+					13: () => {
+						let currentSlide = Reveal.getCurrentSlide();
+						let currentVideo = currentSlide.getElementsByTagName("video")[0];
+						if (currentVideo) {
+							if (currentVideo.paused == true) currentVideo.play();
+							else currentVideo.pause();
+						} else {
+							Reveal.next();
+						}
+					},
+					// Pausar videos Background con el enter
+					32: () => {
+						let currentSlide = Reveal.getCurrentSlide();
+						let currentVideo = currentSlide.slideBackgroundContentElement.getElementsByTagName(
+							"video"
+						)[0];
+						if (currentVideo) {
+							if (currentVideo.paused == true) currentVideo.play();
+							else currentVideo.pause();
+						} else {
+							Reveal.next();
+						}
+					},
+				},
+				controls: false,
+				defaultTiming: true,
+				navigationMode: "linear",
+				backgroundTransition: "fade",
 				hash: true,
-
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
 			});
+		</script>
+		<script>
+			Reveal.on("esconder-escudo", () => {
+				let escudo = document.getElementById("escudo");
+				escudo.hidden = true;
+				let enredarte = document.getElementById("logo-chico");
+				enredarte.hidden = true;
+			});
+
+			// Reveal.on("mostrar-logo", () => {
+			// 	let escudo = document.getElementById("logo-chico");
+			// 	escudo.style.display = "block";
+			// });
 		</script>
 	</body>
 </html>
